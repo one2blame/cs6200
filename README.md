@@ -54,3 +54,32 @@ network programming, process memory management, how to use stack and queue
 data structures, and how to use Valgrind and
 [ASan](https://github.com/google/sanitizers/wiki/AddressSanitizer) to hunt
 down memory leaks and programming errors.
+
+### Project 2
+
+Project 2 was an extra credit project that was only graded if a student needed
+a couple more points to increase their letter grade. This project required
+students to evaluate the performance of their implemetation of Project 1, and
+how the project could be designed differently in order to increase
+performance.
+
+### Project 3
+
+This project is an exercise in designing and implementing applications that
+leverage inter-process communication (IPC). This project builds upon Project 1.
+The multithreaded web server previously designed will now work in tandem with a
+web proxy. When the multithreaded client requests a file, the web server will
+check with the web proxy to see if the requested file exists locally within the
+cache. If not, the web proxy will use the [curl](https://curl.haxx.se/) library
+to download the file from the internet and then store the contents of the file
+locally. The web proxy will then transfer the file to the web server using the
+[POSIX shared memory API](https://www.man7.org/linux/man-pages/man7/shm_overview.7.html).
+If the file exists locally, the web proxy will not make an HTTP request,
+transferring the file to the web server via shared memory. The client and the
+web server still use a custom protocol to conduct communication and file
+exchanges.
+
+The entire project is written in C. In this project I learned how to use
+libcurl, how to create, manage, and use 
+[POSIX message queues](https://www.man7.org/linux/man-pages/man7/mq_overview.7.html)
+for IPC, and how to use the POSIX shared memory API for IPC.
