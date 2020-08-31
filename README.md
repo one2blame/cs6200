@@ -32,3 +32,25 @@ commands, Linux system calls, and programming in C.
 
 ## Projects
 
+I worked on each project for this course in a separate repository. Each project
+is added to this repository as a submodule. The submodules in this repository
+are private to uphold the Georgia Institute of Technology
+[Academic Honor Code](https://osi.gatech.edu/content/honor-code).
+
+### Project 1
+
+This project is an exercise in designing and implementing multithreaded
+applications. The student is tasked with creating a multithreaded web server
+that will serve static files based on a custom protocol. The student must also
+create a multithread client application that will use the same custom protocol
+to generate requests for files from the web server.
+
+The entire project is written in C. In this project I learned how to
+efficiently use the
+[pthreads](https://man7.org/linux/man-pages/man7/pthreads.7.html)
+library for multithreaded programming, how to avoid race conditions, effective
+signal handling, multithreaded and thread-safe file access conventions,
+network programming, process memory management, how to use stack and queue
+data structures, and how to use Valgrind and
+[ASan](https://github.com/google/sanitizers/wiki/AddressSanitizer) to hunt
+down memory leaks and programming errors.
