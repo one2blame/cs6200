@@ -83,3 +83,19 @@ The entire project is written in C. In this project I learned how to use
 libcurl, how to create, manage, and use 
 [POSIX message queues](https://www.man7.org/linux/man-pages/man7/mq_overview.7.html)
 for IPC, and how to use the POSIX shared memory API for IPC.
+
+### Project 4
+
+This project is an exercise in designing and implementing applications that
+leverage remote procedure calls and protocol buffers. In this project, students
+design a distributed file system using [gRPC](https://grpc.io/) and Google's
+[Protocol Buffers](https://developers.google.com/protocol-buffers). These tools
+will allow students to implement several file transfer protocols and a
+synchronization system so that multiple clients and one server have consistent
+files across different file caches.
+
+The entire project is written in C++. In this project I learned how to use the
+protobuf library, how to handle asynchronous gRPC calls, how to use
+[inotify](https://man7.org/linux/man-pages/man7/inotify.7.html) to monitor
+filesystem events, and how to design and implement object-oriented applications
+written in C++.
