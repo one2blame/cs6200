@@ -1,11 +1,12 @@
-# Graduate Intro. to OS - CS6200
+# cs6200
 
-## Introduction
+This class is a graduate-level introductory course in operating system. I
+already took an operating systems course during my undergraduate studies,
+however, I felt like this would be a good refresher and first class in GATech's
+OMSCS program.
 
-Hello and welcome to my repository for the Graduate Introduction to Operating Systems (**CS6200**) class I took at the Georgia Insitute of Technology (**GA Tech**).
+[Here](https://omscs.gatech.edu/cs-6200-introduction-operating-systems) is the
+official course webpage.
 
-In this repository you will find all of my notes for each lecture in this course, as well as the code I completed for each project.
+## Projects
 
-Also attached are some papers and books I read to assist me in understanding some of the underlying conecpts of Operating Systems, programming in C, and using build systems like CMake.
-
-<center>© https://austinheath.dev 2019</center>
