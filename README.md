@@ -45,15 +45,18 @@ that will serve static files based on a custom protocol. The student must also
 create a multithread client application that will use the same custom protocol
 to generate requests for files from the web server.
 
-The entire project is written in C. In this project I learned how to
-efficiently use the
-[pthreads](https://man7.org/linux/man-pages/man7/pthreads.7.html)
-library for multithreaded programming, how to avoid race conditions, effective
-signal handling, multithreaded and thread-safe file access conventions,
-network programming, process memory management, how to use stack and queue
-data structures, and how to use Valgrind and
-[ASan](https://github.com/google/sanitizers/wiki/AddressSanitizer) to hunt
-down memory leaks and programming errors.
+The entire project is written in C. In this project I learned:
+
+* How to efficiently use the [pthreads](https://man7.org/linux/man-pages/man7/pthreads.7.html)
+library for multithreaded programming
+* How to avoid race conditions
+* Effective signal handling
+* Multithreaded and thread-safe file access conventions
+* Network programming
+* Process memory management
+* How to use stack and queue data structures
+* How to use Valgrind and [ASan](https://github.com/google/sanitizers/wiki/AddressSanitizer) to hunt
+down memory leaks and programming errors
 
 ### Project 2
 
@@ -79,10 +82,12 @@ transferring the file to the web server via shared memory. The client and the
 web server still use a custom protocol to conduct communication and file
 exchanges.
 
-The entire project is written in C. In this project I learned how to use
-libcurl, how to create, manage, and use 
-[POSIX message queues](https://www.man7.org/linux/man-pages/man7/mq_overview.7.html)
-for IPC, and how to use the POSIX shared memory API for IPC.
+The entire project is written in C. In this project I learned:
+
+* How to use libcurl
+* How to create, manage, and use [POSIX message queues](https://www.man7.org/linux/man-pages/man7/mq_overview.7.html)
+for IPC
+* How to use the POSIX shared memory API for IPC.
 
 ### Project 4
 
@@ -94,8 +99,10 @@ will allow students to implement several file transfer protocols and a
 synchronization system so that multiple clients and one server have consistent
 files across different file caches.
 
-The entire project is written in C++. In this project I learned how to use the
-protobuf library, how to handle asynchronous gRPC calls, how to use
-[inotify](https://man7.org/linux/man-pages/man7/inotify.7.html) to monitor
-filesystem events, and how to design and implement object-oriented applications
-written in C++.
+The entire project is written in C++. In this project I learned how to:
+
+* Use the protobuf library,
+* How to handle asynchronous gRPC calls
+* How to use [inotify](https://man7.org/linux/man-pages/man7/inotify.7.html) to monitor
+filesystem events
+* How to design and implement object-oriented applications written in C++
