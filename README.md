@@ -101,7 +101,7 @@ files across different file caches.
 
 The entire project is written in C++. In this project I learned how to:
 
-* Use the protobuf library,
+* Use the protobuf library
 * How to handle asynchronous gRPC calls
 * How to use [inotify](https://man7.org/linux/man-pages/man7/inotify.7.html) to monitor
 filesystem events
